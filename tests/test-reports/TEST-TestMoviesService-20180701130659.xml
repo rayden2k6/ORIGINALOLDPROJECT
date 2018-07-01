@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="TestMoviesService-20180701130659" skipped="0" tests="4" time="1.275" timestamp="2018-07-01T13:07:00">
+	<testcase classname="TestMoviesService" name="test_all_movie_records" time="0.399" timestamp="2018-07-01T13:06:59"/>
+	<testcase classname="TestMoviesService" name="test_movie_delete" time="0.342" timestamp="2018-07-01T13:07:00"/>
+	<testcase classname="TestMoviesService" name="test_movie_rating_update" time="0.317" timestamp="2018-07-01T13:07:00"/>
+	<testcase classname="TestMoviesService" name="test_not_found" time="0.217" timestamp="2018-07-01T13:07:00"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="1" name="TestMoviesService-20180701125602" skipped="0" tests="4" time="1.282" timestamp="2018-07-01T12:56:03">
+	<testcase classname="TestMoviesService" name="test_movie_rating_update" time="0.373" timestamp="2018-07-01T12:56:03"/>
+	<testcase classname="TestMoviesService" name="test_not_found" time="0.218" timestamp="2018-07-01T12:56:03"/>
+	<testcase classname="TestMoviesService" name="test_all_movie_records" time="0.442" timestamp="2018-07-01T12:56:03">
+		<failure message="Items in the first set but not the second:
+(u'rating', 4.6)
+Items in the second set but not the first:
+('rating', 8.2)" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "movies.py", line 61, in test_all_movie_records
+    self.assertEqual( set(actual_reply.items()), set(expected.items()))
+AssertionError: Items in the first set but not the second:
+(u'rating', 4.6)
+Items in the second set but not the first:
+('rating', 8.2)
+]]>		</failure>
+	</testcase>
+	<testcase classname="TestMoviesService" name="test_movie_delete" time="0.249" timestamp="2018-07-01T12:56:03">
+		<error message="No JSON object could be decoded" type="ValueError">
+<![CDATA[Traceback (most recent call last):
+  File "movies.py", line 78, in test_movie_delete
+    actual_reply = actual_reply.json()
+  File "C:\Users\abc\AppData\Local\Enthought\Canopy\edm\envs\User\lib\site-packages\requests\models.py", line 799, in json
+    return json.loads(self.text, **kwargs)
+  File "C:\Users\abc\AppData\Local\Enthought\Canopy\edm\envs\User\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\abc\AppData\Local\Enthought\Canopy\edm\envs\User\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\abc\AppData\Local\Enthought\Canopy\edm\envs\User\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

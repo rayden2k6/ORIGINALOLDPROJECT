@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<testsuite errors="0" failures="0" name="TestMoviesService-20180612220111" tests="4" time="1.303">
+	<testcase classname="TestMoviesService" name="test_all_movie_records" time="0.467"/>
+	<testcase classname="TestMoviesService" name="test_movie_delete" time="0.328"/>
+	<testcase classname="TestMoviesService" name="test_movie_rating_update" time="0.305"/>
+	<testcase classname="TestMoviesService" name="test_not_found" time="0.203"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
