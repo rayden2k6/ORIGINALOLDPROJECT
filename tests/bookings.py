@@ -33,7 +33,7 @@ def fillsqlitetable():
 
 class TestBookingService(unittest.TestCase):
     def setUp(self):
-        self.url = "http://0.0.0.0:5003/bookings"
+        self.url = "http://127.0.0.1:5003/bookings"
 
     def test_booking_records(self):
         """ Test /bookings/<username> for all known bookings"""
