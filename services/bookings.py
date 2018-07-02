@@ -26,7 +26,7 @@ def fillsqlitetable():
     for booking in bookings:
         db.session.delete(booking)
     db.session.commit()
-    jsondb = json.load(open('C:\\Users\\abc\\Desktop\\cinema-microservice\\cinema-microservice\\database\\bookings.json','r'))
+    jsondb = json.load(open('../database/bookings.json','r'))
     for user_id in jsondb.keys():
         for showtime_id in jsondb[user_id].keys():
             for movie_id in jsondb[user_id][showtime_id]:
